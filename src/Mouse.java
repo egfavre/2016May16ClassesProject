@@ -5,7 +5,7 @@ import java.util.Date;
  */
 public class Mouse {
     String name;
-    String strain;
+    Strain strain;
     String coatColor;
     String dob;
     boolean female;
