@@ -6,4 +6,23 @@ public class Strain {
     int maturationAge;
     String vendor;
     double costPerMouse;
+
+    public Strain(String diet, int maturationAge, String vendor, double costPerMouse) {
+        this.diet = diet;
+        this.maturationAge = maturationAge;
+        this.vendor = vendor;
+        this.costPerMouse = costPerMouse;
+    }
+
+    public static boolean isValidVendor(String vendor) {
+        return vendor.contains("Jax");
+    }
+
+    public int getMaturationAge() {
+        return maturationAge;
+    }
+
+    public void setMaturationAge(int newMaturationAge) {
+        maturationAge = newMaturationAge;
+    }
 }
