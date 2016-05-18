@@ -17,7 +17,7 @@ public class Mouse {
         this.dob = dob;
         this.female = female;
         this.mating = mating;
-    }
+    }/*
     public String getName() {
         return name;
     }
@@ -72,5 +72,5 @@ public class Mouse {
             dob = newDob + "*";
         }
         return dob;
-    }
+    }*/
 }
