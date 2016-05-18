@@ -18,11 +18,34 @@ public class Strain {
         return vendor.contains("Jax");
     }
 
+    public String getDiet(){
+        return diet;
+    }
+
+    public void setDiet(String newDiet){
+        diet = newDiet;
+    }
+
     public int getMaturationAge() {
         return maturationAge;
     }
 
     public void setMaturationAge(int newMaturationAge) {
         maturationAge = newMaturationAge;
+    }
+
+    public String getVendor(){
+        return vendor;
+    }
+
+    public void setVendor(String newVendor){
+        vendor = newVendor;}
+
+    public double getCostPerMouse() {
+        return costPerMouse;
+    }
+
+    public void setCostPerMouse(double newCostPerMouse) {
+        costPerMouse = newCostPerMouse;
     }
 }

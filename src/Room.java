@@ -6,6 +6,7 @@ public class Room {
     boolean lightCycleStandard;
     boolean microisolationCages;
     String technicianName;
+    boolean valid;
 
 
     public Room(int roomNumber, boolean lightCycleStandard, boolean microisolationCages, String technicianName) {
@@ -15,7 +16,6 @@ public class Room {
         this.technicianName = technicianName;
     }
 
-
     public int getRoomNumber() {
         return roomNumber;
     }
@@ -24,7 +24,32 @@ public class Room {
         roomNumber = newRoomNumber;
     }
 
-    public static boolean isValidTechName(String technicianName) {
-        return technicianName.contains(" ");
+    public boolean getLightCycleStandard(){
+        return lightCycleStandard;
+    }
+
+    public void setLightCycleStandard(boolean newLightCycleStandard){
+        lightCycleStandard = newLightCycleStandard;
+    }
+
+    public boolean getMicroisolationCages(){
+        return microisolationCages;
+    }
+
+    public void setMicroisolationCages(boolean newMicroisolationCages){
+        microisolationCages = newMicroisolationCages;
+    }
+
+    public String getTechnicianName(){
+        return technicianName;
+    }
+
+    public void setTechnicianName(String newTechnicianName){
+        technicianName = newTechnicianName;
+    }
+
+    public boolean isValidTechName() {
+        boolean valid = technicianName.contains(" ");
+        return valid;
     }
 }

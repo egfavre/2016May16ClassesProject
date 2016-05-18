@@ -6,6 +6,7 @@ public class House {
     boolean pathogenFree;
     String beddingType;
     String owner;
+    String newOwner;
 
     public House (boolean pups, boolean pathogenFree, String beddingType) {
         this.pups = pups;
@@ -14,6 +15,13 @@ public class House {
         owner = "dr Paulos";
     }
 
+    public boolean getPups(){
+        return pups;
+    }
+
+    public void setPups(boolean newPups){
+        pups = newPups;
+    }
 
     public boolean getPathogenFree() {
         return pathogenFree;
@@ -23,13 +31,29 @@ public class House {
         pathogenFree = newPathogenFree;
     }
 
+    public String getBeddingType(){
+        return beddingType;
+    }
+
+    public void setBeddingType(String newBeddingType){
+        beddingType = newBeddingType;
+    }
+
+    public String getOwner(){
+        return owner;
+    }
+
+    public void setOwner(String newOwner){
+        owner = newOwner;
+    }
+
     public String ifValidOwner() {
         if (owner.contains("dr")){
-            owner = owner + "*";}
-            return owner;
+             newOwner = owner + "*";
+        }
+        else {
+            newOwner = "dr. " + owner;
+        }
+        return newOwner;
     }
 }
-
-
-
-

@@ -3,21 +3,21 @@
  */
 public class Mouse {
     String name;
-    String strain;
+    Strain strain;
     String coatColor;
     String dob;
     boolean female;
     boolean mating;
     int dobLength;
 
-    public Mouse(String name, String strain, String coatColor, String dob, boolean female, boolean mating) {
+    public Mouse(String name, Strain strain, String coatColor, String dob, boolean female, boolean mating) {
         this.name = name;
         this.strain = strain;
         this.coatColor = coatColor;
         this.dob = dob;
         this.female = female;
         this.mating = mating;
-    }/*
+    }
     public String getName() {
         return name;
     }
@@ -25,11 +25,11 @@ public class Mouse {
     public void setName(String newName) {
         name = newName;
     }
-    public String getStrain() {
+    public Strain getStrain() {
         return strain;
     }
 
-    public void setStrain(String newStrain) {
+    public void setStrain(Strain newStrain) {
         strain = newStrain;
     }
     public String getCoatColor() {
@@ -67,10 +67,10 @@ public class Mouse {
         return dob.length() == 10;
     }
 
-    public String starDob(String newDob) {
-        if (newDob.length() == 10) {
-            dob = newDob + "*";
+    public String starDob() {
+        if (dob.length() == 10) {
+            this.dob = dob + "*";
         }
         return dob;
-    }*/
+    }
 }
